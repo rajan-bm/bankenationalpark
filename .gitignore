@@ -1,0 +1,21 @@
+/vendor/
+wp-content/uploads/
+wp-content/cache/
+wp-content/ai1wm-backups/
+wp-content/plugins/backwpup-*/backups/
+wp-config.php
+
+node_modules/
+dist/
+vendor/
+.env
+.env.*
+*.log
+.htaccess
+
+#mac files 
+.DS_Store
+Thumbs.db
+.vite/
+npm-debug.log*
+bun.lock
