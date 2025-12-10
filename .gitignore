@@ -6,8 +6,6 @@ wp-content/plugins/backwpup-*/backups/
 wp-config.php
 
 node_modules/
-dist/
-vendor/
 .env
 .env.*
 *.log
