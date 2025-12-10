@@ -12,8 +12,14 @@ class Assets
     public function enqueue()
     {
         $dist = get_stylesheet_directory_uri() . '/dist';
+        $manifest_path = get_stylesheet_directory() . '/dist/manifest.json';
 
-        wp_enqueue_style('theme-style', $dist . '/main.css', [], null);
-        wp_enqueue_script('theme-js', $dist . '/main.js', [], null, true);
+        if (file_exists($manifest_path)) {
+            $manifest = json_decode(file_get_contents($manifest_path), true);
+            $main = $manifest['src/js/main.js'];
+
+            wp_enqueue_style('theme-style', $dist . '/' . $main['css'][0], [], null);
+            wp_enqueue_script('theme-js', $dist . '/' . $main['file'], [], null, true);
+        }
     }
 }

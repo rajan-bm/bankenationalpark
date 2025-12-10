@@ -17,3 +17,5 @@ Thumbs.db
 .vite/
 npm-debug.log*
 bun.lock
+bun.lockb
+composer.lock

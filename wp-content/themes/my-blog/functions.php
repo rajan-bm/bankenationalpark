@@ -1,6 +1,5 @@
 <?php
-
-require_once get_theme_file_path('app/Core/Theme.php');
+require_once __DIR__ . '/vendor/autoload.php';
 
 add_action('after_setup_theme', function () {
     $theme = new App\Core\Theme();
