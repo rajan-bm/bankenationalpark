@@ -1,6 +1,5 @@
 <?php
-
-namespace App\Core;
+namespace Razan\App\Core;
 
 class Theme
 {

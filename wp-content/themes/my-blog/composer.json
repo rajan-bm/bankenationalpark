@@ -1,16 +1,17 @@
 {
-    "name": "vendor/razan",
-    "description": "Just fun worpdress project",
-    "autoload": {
-        "psr-4": {
-            "Vendor\\Razan\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "rajan bm",
-            "email": "o.rajanbm@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "vendor/razan",
+  "description": "Just fun worpdress project",
+  "autoload": {
+    "psr-4": {
+      "Razan\\App\\": "app/",
+      "Razan\\Src\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "rajan bm",
+      "email": "o.rajanbm@gmail.com"
+    }
+  ],
+  "require": {}
 }
